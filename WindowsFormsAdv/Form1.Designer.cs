@@ -65,6 +65,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.확대ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.축소ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -280,9 +282,13 @@
             // 
             // 확대하기축소하기ToolStripMenuItem
             // 
+            this.확대하기축소하기ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.확대ToolStripMenuItem,
+            this.축소ToolStripMenuItem});
             this.확대하기축소하기ToolStripMenuItem.Name = "확대하기축소하기ToolStripMenuItem";
             this.확대하기축소하기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.확대하기축소하기ToolStripMenuItem.Text = "확대하기/축소하기";
+            this.확대하기축소하기ToolStripMenuItem.Click += new System.EventHandler(this.확대하기축소하기ToolStripMenuItem_Click);
             // 
             // 상태줄표시ToolStripMenuItem
             // 
@@ -345,6 +351,20 @@
             this.toolStripProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.toolStripProgressBar1.Value = 50;
             // 
+            // 확대ToolStripMenuItem
+            // 
+            this.확대ToolStripMenuItem.Name = "확대ToolStripMenuItem";
+            this.확대ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.확대ToolStripMenuItem.Text = "확대";
+            this.확대ToolStripMenuItem.Click += new System.EventHandler(this.확대ToolStripMenuItem_Click);
+            // 
+            // 축소ToolStripMenuItem
+            // 
+            this.축소ToolStripMenuItem.Name = "축소ToolStripMenuItem";
+            this.축소ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.축소ToolStripMenuItem.Text = "축소";
+            this.축소ToolStripMenuItem.Click += new System.EventHandler(this.축소ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -403,6 +423,8 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripMenuItem 확대ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 축소ToolStripMenuItem;
     }
 }
 
