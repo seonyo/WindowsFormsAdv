@@ -16,5 +16,25 @@ namespace WindowsFormsAdv
         {
             InitializeComponent();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void 편지ㅂToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 글껄ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 상태줄표시ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
