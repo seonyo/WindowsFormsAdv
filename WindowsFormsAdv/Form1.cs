@@ -82,5 +82,10 @@ namespace WindowsFormsAdv
                 toolStripProgressBar1.Value -= toolStripProgressBar1.Step;
             }
         }
+
+        private void gf(object sender, EventArgs e)
+        {
+
+        }
     }
 }
